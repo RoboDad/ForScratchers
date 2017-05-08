@@ -1,6 +1,6 @@
 from PIL import Image
-im = Image.open("mex-hibiscus-2.jpg")
-im = im.resize((40,40), Image.LANCZOS)
+im = Image.open("cairo.jpg")
+im = im.resize((50,50), Image.LANCZOS).transpose(Image.FLIP_TOP_BOTTOM)
 #im.show();
 pixels = list(im.getdata())
 
